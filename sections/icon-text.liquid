@@ -1,0 +1,167 @@
+<style>
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+    .custom-image-container {
+      background-color: {{ section.settings.bg_color }};
+    }
+    .custom-instruction {
+      font-weight: 600;
+      color: #F1F1F1;
+      font-size: 50px;
+  }
+    .text-field {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .main_image {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 7px;
+    }
+    /* .newsletter-form__button.field__button {
+      padding: 13px 15px !important;
+    } */
+    .main_image img {
+      width: 48px;
+      height: 48px;
+    }
+    span.star_svg {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+   .custom-instruction {
+    color: #ffffff; /* white text color */
+    animation: bounce 2s infinite; /* Bounce animation */
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .custom-instruction {
+      font-size: 48px;
+    }
+  }
+</style>
+<div class="custom-image-container section-{{ section.id }}-padding">
+  <marquee>
+    <div class="wrap_ced_marquee" style="display:flex">
+      {% for i in (1..100) -%}
+        <div class="track">
+          <div class="main_image ">
+            {%- for block in section.blocks -%}
+              {% if block.type == 'mainimage' %}
+                {% if block.settings.starimg != blank %}
+                  <span Class="star_svg">
+                    <img
+                      src="{{ block.settings.starimg | img_url:'master' }}"
+                      alt="{{ block.settings.starimg | alt  }}"
+                      height="100%"
+                      width="100%"
+                      loading="lazy"
+                    >
+                  </span>
+                {% endif %}
+                {% if block.settings.custom_text %}
+                  <div class="text-field">
+                    <h2 class="custom-instruction">{{ block.settings.custom_text }}</h2>
+                    <span class="sub-instruction">{{ block.settings.sub_text }}</span>
+                  </div>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {%- endfor %}
+    </div>
+  </marquee>
+</div>
+{% schema %}
+{
+  "name": "Icon-text",
+  "tag": "section",
+  "class": "slideshow",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 12,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 12,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 16
+    }
+  ],
+   "blocks": [
+  {
+    "type": "mainimage",
+    "name": "Main Image",
+    "limit": 6,
+    "settings":
+    [
+       {
+        "type": "image_picker",
+        "id": "starimg",
+        "label": " Upload Star Image"
+      },
+      {
+        "type":"text",
+        "id":"custom_text",
+        "label":"Text "
+      },
+       {
+        "type":"text",
+        "id":"sub_text",
+        "label":"Sub Text "
+      }
+    ]
+}],
+"presets": [
+  {
+    "name": "Icon-text",
+    "blocks": [
+      {
+        "type": "mainimage"
+      }
+    ]
+  }
+]}
+{% endschema %}

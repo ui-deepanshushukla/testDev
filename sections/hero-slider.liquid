@@ -1,0 +1,187 @@
+{% style %}
+ .hero-slider__column.small-11.small-centered {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    background: #1a1816;
+}
+.hero-slider__heading,.hero-slider__subheading {
+    color: #fff;
+}
+  .hero-slider button.slick-next.slick-arrow {
+    right: 0;
+}
+  .hero-slider__heading {
+    font-size: 50px;
+    margin: 0;
+}
+  .hero-slider__link {
+    padding: 12px 25px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+  .hero-slider__content.slick-slide {
+    text-align: center;
+}
+ .hero-slider__content {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .hero-slider .slick-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-slider__heading, .hero-slider__subheading, .hero-slider__link {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .slick-active .hero-slider__heading, .slick-active .hero-slider__subheading, .slick-active .hero-slider__link {
+      opacity: 1;
+      transform: translateY(0);
+    }
+     .hero-slider button.slick-prev.slick-arrow {
+     left: 46%;
+     top: 80%;
+}
+    .hero-slider button.slick-next.slick-arrow {
+     top: 80%;
+     right: 46%;
+}
+  .hero-slider__slider.slider-nav-content.slick-initialized.slick-slider {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+{% endstyle %}
+
+<section class="hero-slider">
+  <div class="hero-slider__wrapper">
+    <div class="hero-slider__column small-11 small-centered">
+    {%- assign image_in_block = section.blocks | where: "type", "image_picker" -%}
+    {% for image in image_in_block %}
+
+    {%endfor%}
+      
+
+      <div class="hero-slider__slider slider-single-img ">
+      {% for block in section.blocks %}
+        {% if block.settings.image %}
+          {%liquid 
+              assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
+              assign sizes = '100vw'
+              assign widths = '375, 550, 750, 850'
+              %}
+         <img class="slider-banner-wrapper__image"  loading="lazy" src="{{block.settings.image | image_url: width: 850 }}"  height="{{ height }}" width="{{widths }}" alt="{{block.settings.image.alt}}"/>
+         {%else%}
+          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%endif%}
+      {% endfor %}
+      </div>
+      <div class="hero-slider__slider slider-nav-content">
+      {% for block in section.blocks%}
+        <div class="hero-slider__content">
+          {% if block.settings.heading%}<h2 class="hero-slider__heading">{{-block.settings.heading-}}</h2>{%endif%} 
+          {% if block.settings.info_text%} <p class="hero-slider__subheading">{{-block.settings.info_text-}}</p>{%endif%}
+          {% if block.settings.url%}<a class="hero-slider__link" href="{{block.settings.url}}">{{-block.settings.button_label-}}</a>{%endif%}
+        </div>
+        {%endfor%}
+        {% comment %} <div class="hero-slider__content">
+          <h2 class="hero-slider__heading">View Our Latest Catalog Of Vintage Jewelry</h2>
+          <p class="hero-slider__subheading">No one shall be subjected to arbitrary arrest, detention or exile.</p>
+          <a class="hero-slider__link" href="#">Shop Now</a>
+        </div>
+        <div class="hero-slider__content">
+          <h2 class="hero-slider__heading">View Our Latest Catalog Of Vintage Jewelry</h2>
+          <p class="hero-slider__subheading">No one shall be subjected to arbitrary arrest, detention or exile.</p>
+          <a class="hero-slider__link" href="#">Shop Now</a>
+        </div> {% endcomment %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Hero-slider",
+  "tag": "section",
+  "class": "hero-slider",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Slideshow"
+    }
+  ],
+  "max_blocks": 5,
+  "blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "info_text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "url"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "label",
+          "default": "Shop now"
+        },
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+  ],
+  "presets": [
+    {
+      "name": "Hero-slider",
+      "settings": {
+        "title": "Slideshow"
+      },
+      "blocks": [
+        {
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ],
+  "locales": {
+    "en": {
+      "title": "Slideshow"
+    },
+    "fr": {
+      "title": "Diaporama"
+    }
+  }
+}
+{% endschema %}

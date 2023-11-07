@@ -1,0 +1,572 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "HALLOWEEN SALE 25% OFF STEAMPUNK & COSTUMES",
+            "button_link_2": "shopify:\/\/collections\/steampunk-fashionista-clothes-unisex",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bebravebeyou.png",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "steampunk-gothic-retro-clothing-and-accessories",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "b1203766-908c-4833-9818-09013ab2e792": {
+      "type": "icon-text",
+      "blocks": {
+        "template--21446552846610__b1203766-908c-4833-9818-09013ab2e792-mainimage-1": {
+          "type": "mainimage",
+          "settings": {
+            "starimg": "shopify:\/\/shop_images\/9784594309_685927213.jpg",
+            "custom_text": "Get Best Deal",
+            "sub_text": ""
+          }
+        },
+        "1a4ac256-00fe-45b5-99bd-b97ee545193b": {
+          "type": "mainimage",
+          "settings": {
+            "starimg": "shopify:\/\/shop_images\/96afeb53-de2e-43ad-ad3c-cf36a426213f.jpg",
+            "custom_text": "Black Friday Sale",
+            "sub_text": ""
+          }
+        },
+        "e4e9dda2-b774-45f9-bbe5-8ab6488d7a9e": {
+          "type": "mainimage",
+          "settings": {
+            "starimg": "shopify:\/\/shop_images\/9784594309_685927213.jpg",
+            "custom_text": "Best Seller",
+            "sub_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21446552846610__b1203766-908c-4833-9818-09013ab2e792-mainimage-1",
+        "1a4ac256-00fe-45b5-99bd-b97ee545193b",
+        "e4e9dda2-b774-45f9-bbe5-8ab6488d7a9e"
+      ],
+      "settings": {
+        "bg_color": "#242833",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "40acd3aa-c179-4702-8c76-2fa5c80ccb1d": {
+      "type": "hero-slider",
+      "blocks": {
+        "template--21446552846610__40acd3aa-c179-4702-8c76-2fa5c80ccb1d-slide-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "View Our Latest Catalog Of Vintage Jewelry",
+            "info_text": "No one shall be subjected to arbitrary arrest, detention or exile.",
+            "url": "shopify:\/\/collections\/jewelry-sets",
+            "button_label": "Shop Now",
+            "image": "shopify:\/\/shop_images\/SilverSEaTurtlelocketnecklacewithpaua.jpg"
+          }
+        },
+        "template--21446552846610__40acd3aa-c179-4702-8c76-2fa5c80ccb1d-slide-2": {
+          "type": "slide",
+          "settings": {
+            "heading": "View Our Latest Catalogue Of Vintage Jewellery",
+            "info_text": "No one shall be subjected to arbitrary arrest, detention or exile.",
+            "url": "shopify:\/\/collections\/earrings",
+            "button_label": "Shop now",
+            "image": "shopify:\/\/shop_images\/df2cb67f-4349-46dd-a325-0e64e2b9f361.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--21446552846610__40acd3aa-c179-4702-8c76-2fa5c80ccb1d-slide-1",
+        "template--21446552846610__40acd3aa-c179-4702-8c76-2fa5c80ccb1d-slide-2"
+      ],
+      "settings": {
+        "title": "Slideshow"
+      }
+    },
+    "996bbf26-f80e-4dbd-92f0-4c2a39136e96": {
+      "type": "typed-text",
+      "blocks": {
+        "template--21446552846610__996bbf26-f80e-4dbd-92f0-4c2a39136e96-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Accessories, Jewelry and Bags Professionally Crafted with Intelligence,",
+            "heading_size": "h1"
+          }
+        },
+        "template--21446552846610__996bbf26-f80e-4dbd-92f0-4c2a39136e96-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--21446552846610__996bbf26-f80e-4dbd-92f0-4c2a39136e96-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21446552846610__996bbf26-f80e-4dbd-92f0-4c2a39136e96-heading-1",
+        "template--21446552846610__996bbf26-f80e-4dbd-92f0-4c2a39136e96-text-1",
+        "template--21446552846610__996bbf26-f80e-4dbd-92f0-4c2a39136e96-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "inverse",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "c4543172-4124-461d-9ab1-9a02f36f62b7": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21446552846610__c4543172-4124-461d-9ab1-9a02f36f62b7-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/df2cb67f-4349-46dd-a325-0e64e2b9f361.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21446552846610__c4543172-4124-461d-9ab1-9a02f36f62b7-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "The Perfect Gift Awerd",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "Shop Now",
+            "link": "shopify:\/\/collections\/jewelry-sets"
+          }
+        },
+        "template--21446552846610__c4543172-4124-461d-9ab1-9a02f36f62b7-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1719915067065110528.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21446552846610__c4543172-4124-461d-9ab1-9a02f36f62b7-column-1",
+        "template--21446552846610__c4543172-4124-461d-9ab1-9a02f36f62b7-column-2",
+        "template--21446552846610__c4543172-4124-461d-9ab1-9a02f36f62b7-column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e3fac50b-7e46-43c3-ae17-0acb03c8de5b": {
+      "type": "multicolumn-img",
+      "blocks": {
+        "template--21446552846610__e3fac50b-7e46-43c3-ae17-0acb03c8de5b-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/df2cb67f-4349-46dd-a325-0e64e2b9f361.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21446552846610__e3fac50b-7e46-43c3-ae17-0acb03c8de5b-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "A Perfect Gift Awaits",
+            "text": "<p>We'll explain the part that pertains to the text animation. Our text appears gradually after the slide is loaded and moves upwards so at the<\/p>",
+            "link_label": "Shop Now",
+            "link": "shopify:\/\/collections\/bracelets"
+          }
+        },
+        "template--21446552846610__e3fac50b-7e46-43c3-ae17-0acb03c8de5b-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1719915067065110528.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21446552846610__e3fac50b-7e46-43c3-ae17-0acb03c8de5b-column-1",
+        "template--21446552846610__e3fac50b-7e46-43c3-ae17-0acb03c8de5b-column-2",
+        "template--21446552846610__e3fac50b-7e46-43c3-ae17-0acb03c8de5b-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1ca756d6-fa11-4595-9327-3eb3b1320f5c",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "02fc92ac-d00d-44e4-90f6-e3d9fd42cf86": {
+      "type": "multicolumn-img",
+      "blocks": {
+        "template--21446552846610__02fc92ac-d00d-44e4-90f6-e3d9fd42cf86-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/d7c57c0a-fb88-467b-bc09-86af2bcc0ed8.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21446552846610__02fc92ac-d00d-44e4-90f6-e3d9fd42cf86-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/259ef5be-5f90-403a-bc37-6a466c1fc90e.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21446552846610__02fc92ac-d00d-44e4-90f6-e3d9fd42cf86-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21446552846610__02fc92ac-d00d-44e4-90f6-e3d9fd42cf86-column-1",
+        "template--21446552846610__02fc92ac-d00d-44e4-90f6-e3d9fd42cf86-column-2",
+        "template--21446552846610__02fc92ac-d00d-44e4-90f6-e3d9fd42cf86-column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "01a996ae-24c9-4e7b-8c93-784e8d32a893": {
+      "type": "multicolumn-img-text",
+      "blocks": {
+        "template--21446552846610__01a996ae-24c9-4e7b-8c93-784e8d32a893-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2def0dc6-35f6-4b54-afdf-071d81e038ce.jpg",
+            "sub-title": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21446552846610__01a996ae-24c9-4e7b-8c93-784e8d32a893-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c751f5c5-c396-4680-a475-1467efc070c4.jpg",
+            "sub-title": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21446552846610__01a996ae-24c9-4e7b-8c93-784e8d32a893-column-3": {
+          "type": "column",
+          "settings": {
+            "sub-title": "<em><strong>Luxury Jewelry<\/strong><\/em>",
+            "title": "Minimalist Gold Ring",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "Shop Now",
+            "link": "shopify:\/\/collections\/necklaces"
+          }
+        }
+      },
+      "block_order": [
+        "template--21446552846610__01a996ae-24c9-4e7b-8c93-784e8d32a893-column-1",
+        "template--21446552846610__01a996ae-24c9-4e7b-8c93-784e8d32a893-column-2",
+        "template--21446552846610__01a996ae-24c9-4e7b-8c93-784e8d32a893-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cdc55fb1-43b0-4d85-aea9-bb238b379a51": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "template--21446552846610__cdc55fb1-43b0-4d85-aea9-bb238b379a51-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "best-sellers"
+          }
+        },
+        "template--21446552846610__cdc55fb1-43b0-4d85-aea9-bb238b379a51-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "best-offers"
+          }
+        },
+        "template--21446552846610__cdc55fb1-43b0-4d85-aea9-bb238b379a51-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "earrings"
+          }
+        },
+        "6fd7bac9-f0bf-4ebb-989f-2571575f003d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jewelry-sets"
+          }
+        },
+        "b68f32f9-796b-4d8c-b73d-4642ca12645c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "home-and-garden"
+          }
+        }
+      },
+      "block_order": [
+        "template--21446552846610__cdc55fb1-43b0-4d85-aea9-bb238b379a51-featured_collection-1",
+        "template--21446552846610__cdc55fb1-43b0-4d85-aea9-bb238b379a51-featured_collection-2",
+        "template--21446552846610__cdc55fb1-43b0-4d85-aea9-bb238b379a51-featured_collection-3",
+        "6fd7bac9-f0bf-4ebb-989f-2571575f003d",
+        "b68f32f9-796b-4d8c-b73d-4642ca12645c"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e619a701-ec64-4d24-ba9f-c7bf91e1a866": {
+      "type": "newsletter",
+      "blocks": {
+        "template--21446552846610__e619a701-ec64-4d24-ba9f-c7bf91e1a866-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe For The Latest Update",
+            "heading_size": "h1"
+          }
+        },
+        "template--21446552846610__e619a701-ec64-4d24-ba9f-c7bf91e1a866-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "template--21446552846610__e619a701-ec64-4d24-ba9f-c7bf91e1a866-email_form-1": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--21446552846610__e619a701-ec64-4d24-ba9f-c7bf91e1a866-heading-1",
+        "template--21446552846610__e619a701-ec64-4d24-ba9f-c7bf91e1a866-paragraph-1",
+        "template--21446552846610__e619a701-ec64-4d24-ba9f-c7bf91e1a866-email_form-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "a8c0ab87-926e-4a55-aee9-313abb6f2f88": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21446552846610__a8c0ab87-926e-4a55-aee9-313abb6f2f88-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Easy-Return_1.png",
+            "title": "Easy Return",
+            "text": "<p>Pair text with an image to focus on your chosen product, <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21446552846610__a8c0ab87-926e-4a55-aee9-313abb6f2f88-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/credit-card-_1.png",
+            "title": "Secure Payment",
+            "text": "<p>Pair text with an image to focus on your chosen product, <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21446552846610__a8c0ab87-926e-4a55-aee9-313abb6f2f88-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guarantee.png",
+            "title": "One-Year Warranty",
+            "text": "<p>Pair text with an image to focus on your chosen product, <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "ccb19454-01ed-495f-8454-eca3dc234fd1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/customer-service.png",
+            "title": "Customer Service",
+            "text": "<p>Pair text with an image to focus on your chosen product, <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21446552846610__a8c0ab87-926e-4a55-aee9-313abb6f2f88-column-1",
+        "template--21446552846610__a8c0ab87-926e-4a55-aee9-313abb6f2f88-column-2",
+        "template--21446552846610__a8c0ab87-926e-4a55-aee9-313abb6f2f88-column-3",
+        "ccb19454-01ed-495f-8454-eca3dc234fd1"
+      ],
+      "settings": {
+        "title": "Service Offerings",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1ca756d6-fa11-4595-9327-3eb3b1320f5c",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "b1203766-908c-4833-9818-09013ab2e792",
+    "40acd3aa-c179-4702-8c76-2fa5c80ccb1d",
+    "996bbf26-f80e-4dbd-92f0-4c2a39136e96",
+    "c4543172-4124-461d-9ab1-9a02f36f62b7",
+    "e3fac50b-7e46-43c3-ae17-0acb03c8de5b",
+    "02fc92ac-d00d-44e4-90f6-e3d9fd42cf86",
+    "01a996ae-24c9-4e7b-8c93-784e8d32a893",
+    "cdc55fb1-43b0-4d85-aea9-bb238b379a51",
+    "e619a701-ec64-4d24-ba9f-c7bf91e1a866",
+    "a8c0ab87-926e-4a55-aee9-313abb6f2f88"
+  ]
+}
